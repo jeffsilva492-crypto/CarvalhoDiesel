@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Carvalho Diesel</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<meta name="description" content="Autopeças diesel em Taguatinga DF. Peças para caminhões e ônibus. Carvalho Diesel referência em Brasília.">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"AutoPartsStore",
+ "name":"Carvalho Diesel",
+ "image":"https://i.imgur.com/MU8oCAs.png",
+ "telephone":"+5561985410102",
+ "address":{
+   "@type":"PostalAddress",
+   "addressLocality":"Brasília",
+   "addressRegion":"DF"
+ }
+}
+</script>
+
+<style>
+body{
+background:url("https://i.imgur.com/dwkIadI.png") center/cover fixed;
+}
+.glow{box-shadow:0 0 20px rgba(0,166,81,.6)}
+@keyframes fade{0%{opacity:0;transform:translateY(40px)}100%{opacity:1}}
+.fade{animation:fade 1s ease forwards}
+@keyframes scroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+.scroll{animation:scroll 25s linear infinite}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%) skewX(12deg); }
+  100% { transform: translateX(200%) skewX(12deg); }
+}
+
+.animate-shimmer {
+  animation: shimmer 3s infinite;
+}
+
+@keyframes gradient {
+  0%,100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 6s ease infinite;
+}
+</style>
+</head>
+
+<body class="text-white font-sans">
+
+<!-- HEADER -->
+<header class="max-w-7xl mx-auto px-6 py-15 flex justify-between items-center">
+<img src="https://i.imgur.com/EHu8rAb.png" class="w-150">
+
+<nav class="flex gap-8 items-center">
+<a href="sobre.html">Sobre</a>
+<a href="#mapa">Loja</a>
+ <a href="promocoes.html" class="text-green-400">Promoções</a>
+<a href="#footer">Contato</a>
+
+<a href="https://wa.me/5561985410102" target="_blank"
+class="flex items-center justify-center bg-[#00a651] w-10 h-10 rounded-full glow hover:scale-110 transition">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" viewBox="0 0 24 24">
+<path d="M20.52 3.48A11.86 11.86 0 0012.05 0C5.4 0 .03 5.37.03 12c0 2.11.55 4.16 1.6 5.97L0 24l6.19-1.63A11.95 11.95 0 0012.05 24c6.65 0 12.02-5.37 12.02-12 0-3.21-1.25-6.23-3.55-8.52zM12.05 21.9c-1.8 0-3.56-.48-5.1-1.39l-.36-.21-3.67.97.98-3.58-.23-.37A9.9 9.9 0 012.15 12c0-5.46 4.44-9.9 9.9-9.9 2.65 0 5.14 1.03 7.02 2.9A9.86 9.86 0 0121.95 12c0 5.46-4.44 9.9-9.9 9.9z"/>
+</svg>
+
+</a>
+</nav>
+</header>
+
+<!-- HERO -->
+
+<section class="max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center fade">
+<div class="md:w-1/2">
+<h1 class="text-6xl font-black mb-6">
+ESPECIALISTAS EM PEÇAS DIESEL<br>PARA LINHA PESADA
+</h1>
+
+<p class="text-gray-300 text-lg">
+Mais de 25 anos fornecendo qualidade, procedência e confiança para sua frota.
+</p>
+</div>
+
+<div class="md:w-1/2">
+<img src="https://i.imgur.com/2AHKKTW.png" class="rounded-xl glow">
+</div>
+</section>
+
+<section class="py-24 text-white">
+<h2 class="text-4xl font-bold text-center mb-16">NOSSAS CATEGORIAS</h2>
+
+<div class="grid md:grid-cols-5 gap-10 max-w-7xl mx-auto px-6 text-center">
+
+<!-- CARD -->
+<div class="card bg-[#0a1b38] rounded-xl shadow-xl p-6 fade">
+<img src="https://i.imgur.com/2MdxbG7.png" class="mx-auto h-40 mb-6 transition">
+<h3 class="text-2xl font-bold">Motores</h3>
+<p class="text-gray-300 text-sm">Componentes e kits completos</p>
+</div>
+
+<div class="card bg-[#0a1b38] rounded-xl shadow-xl p-6 fade">
+<img src="https://i.imgur.com/e0df8M3.png" class="mx-auto h-40 mb-6 transition">
+<h3 class="text-2xl font-bold">Freios</h3>
+<p class="text-gray-300 text-sm">Discos, pastilhas e sistemas</p>
+</div>
+
+<div class="card bg-[#0a1b38] rounded-xl shadow-xl p-6 fade">
+<img src="https://i.imgur.com/upCwf3d.png" class="mx-auto h-40 mb-6 transition">
+<h3 class="text-2xl font-bold">Suspensão</h3>
+<p class="text-gray-300 text-sm">Amortecedores e kits completos</p>
+</div>
+
+<div class="card bg-[#0a1b38] rounded-xl shadow-xl p-6 fade">
+<img src="https://i.imgur.com/3MM2NZy.png" class="mx-auto h-40 mb-6 transition">
+<h3 class="text-2xl font-bold">Filtros</h3>
+<p class="text-gray-300 text-sm">Ar, óleo e combustível</p>
+</div>
+
+<div class="card bg-[#0a1b38] rounded-xl shadow-xl p-6 fade">
+<img src="https://i.imgur.com/Vfz69Q8.png" class="mx-auto h-40 mb-6 transition">
+<h3 class="text-2xl font-bold">Acessórios</h3>
+<p class="text-gray-300 text-sm">Lampadas, Faróis, Lanternas, Buzinas, etc</p>
+</div>
+
+</div>
+</section>
+
+<section class="px-6 mt-12">
+  <div class="relative p-[1px] rounded-2xl bg-gradient-to-r from-green-500 via-emerald-400 to-green-500 animate-gradient">
+<div class="relative overflow-hidden rounded-2xl bg-slate-900 px-6 py-8 md:px-10 md:py-10 flex flex-col items-center text-center gap-3">
+
+  <!-- shimmer -->
+  <div class="absolute inset-0 opacity-20">
+    <div class="absolute -left-1/2 top-0 w-1/2 h-full bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12 animate-shimmer"></div>
+  </div>
+
+  <!-- icon -->
+  <div class="animate-pulse text-green-400">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-11 h-11" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <rect x="2" y="5" width="20" height="14" rx="2" stroke-width="2"/>
+      <path d="M2 10h20" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <!-- text -->
+  <div>
+    <h3 class="text-white font-bold text-lg md:text-xl">
+      Mantenha sua frota rodando pagando em até 10x sem juros
+    </h3>
+    <p class="text-slate-400 text-sm">
+      Facilidade no pagamento para manter seu caminhão sempre em movimento.
+    </p>
+  </div>
+
+</div>
+    
+
+    </div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+
+<!-- ENTREGA PREMIUM -->
+<section class="py-24 relative overflow-hidden">
+
+<!-- parallax background -->
+<div class="absolute inset-0 bg-[url('https://i.imgur.com/dwkIadI.png')] bg-cover bg-center opacity-20"></div>
+
+<div class="relative max-w-5xl mx-auto px-6 text-center bg-[#0a1b38]/90 backdrop-blur-xl p-12 rounded-2xl glow">
+
+<!-- selo entrega -->
+<div class="inline-block bg-[#00a651] px-4 py-1 rounded-full text-sm font-bold mb-6 animate-pulse">
+⚡ Entrega rápida DF
+</div>
+
+<h3 class="text-3xl font-bold mb-6">
+ ENTREGAMOS PARA TODO DF E ENTORNO
+</h3>
+
+<p class="text-gray-300 mb-10">
+*Consulte condições de entrega e disponibilidade com nossa equipe especializada*
+</p>
+
+<!-- mapa DF -->
+<div class="relative mb-10">
+
+
+<!-- rota animada -->
+<div class="absolute inset-0 flex items-center justify-center">
+<div class="w-64 h-1 bg-green-400 rounded-full animate-ping"></div>
+</div>
+</div>
+
+<!-- caminhão animado -->
+<div class="text-5xl mb-8 animate-bounce">
+🚛
+</div>
+
+<a href="https://wa.me/5561985410102?text=Olá%20quero%20consultar%20condições%20de%20entrega"
+target="_blank"
+class="bg-[#00a651] px-8 py-4 rounded-full font-bold glow hover:scale-110 transition">
+
+Consultar condições
+
+</a>
+
+</div>
+</section>
+
+<!-- BADGE GOOGLE -->
+<div class="bg-[#0a1b38] p-8 rounded-xl mb-20 glow max-w-md mx-auto text-center">
+<h3 class="text-2xl font-bold">⭐ 4.5 • 144 avaliações Google</h3>
+<!-- BOTÃO AVALIAÇÕES GOOGLE -->
+<div class="text-center mt-6">
+<a href="https://www.google.com/search?q=Carvalho+Diesel+Taguatinga#lrd=0x0:0x0,1"
+target="_blank"
+class="inline-flex items-center gap-2 bg-[#00a651] px-6 py-3 rounded-full glow hover:scale-110 transition font-bold">
+
+ Ver avaliações no Google
+
+</a>
+</div>
+</div>
+
+<!-- AVALIAÇÕES -->
+<div class="max-w-7xl mx-auto px-6">
+  <div class="grid md:grid-cols-3 gap-10">
+
+    <div class="bg-[#0a1b38] p-6 rounded-xl fade text-center flex flex-col items-center">
+      <p>Atendimento especializado e variedade imensa de peças</p>
+      <strong class="text-green-400">Wellington Guimarães</strong>
+    </div>
+
+    <div class="bg-[#0a1b38] p-6 rounded-xl fade text-center flex flex-col items-center">
+      <p>Preços ótimos e atendimento humanizado</p>
+      <strong class="text-green-400">Juliana Carvalho</strong>
+    </div>
+
+    <div class="bg-[#0a1b38] p-6 rounded-xl fade text-center flex flex-col items-center">
+      <p>Ótimo atendimento e vendedores atenciosos</p>
+      <strong class="text-green-400">Edson Carlos</strong>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- PARCEIROS -->
+<section class="py-24 overflow-hidden">
+<h2 class="text-3xl font-bold text-center mb-12">NOSSOS PARCEIROS</h2>
+
+<div class="flex gap-16 scroll">
+<img src="https://i.imgur.com/CCT0qVM.jpeg" class="h-12">
+<img src="https://i.imgur.com/4py5kKs.png" class="h-12">
+<img src="https://i.imgur.com/yNBx5TV.jpeg" class="h-12">
+<img src="https://i.imgur.com/6kij7L3.png" class="h-12">
+<img src="https://i.imgur.com/zzlsoD1.jpeg" class="h-12">
+<img src="https://i.imgur.com/pIfAS08.jpeg" class="h-12">
+<img src="https://i.imgur.com/BSqWceH.png" class="h-12">
+<img src="https://i.imgur.com/b3xjBlA.png" class="h-12">
+<img src="https://i.imgur.com/WvcBtkM.jpeg" class="h-12">
+<img src="https://i.imgur.com/XoVl6x3.png" class="h-12">
+<img src="https://i.imgur.com/QUUPN08.png" class="h-12">
+<img src="https://i.imgur.com/srfg8G0.jpeg" class="h-12">
+<img src="https://i.imgur.com/8hB767A.png" class="h-12">
+<img src="https://i.imgur.com/z5ooenG.png" class="h-12">
+<img src="https://i.imgur.com/I4psSk5.png" class="h-12">
+<img src="https://i.imgur.com/cyo2NNc.png" class="h-12">
+<img src="aqui" class="h-12">
+<img src="aqui" class="h-12">
+<img src="aqui" class="h-12">
+<img src="aqui" class="h-12">
+<img src="aqui" class="h-12">
+
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="py-32 max-w-5xl mx-auto px-6">
+<h2 class="text-3xl font-bold mb-10 text-center">Dúvidas Frequentes</h2>
+
+<div class="space-y-6">
+<div class="bg-[#0a1b38] p-6 rounded-xl">Quais peças diesel vocês trabalham?</div>
+<div class="bg-[#0a1b38] p-6 rounded-xl">Vocês entregam em Brasília DF?</div>
+<div class="bg-[#0a1b38] p-6 rounded-xl">Trabalham com caminhões e ônibus?</div>
+</div>
+</section>
+
+<!-- ⭐ FOOTER -->
+<footer id="footer" class="bg-white/5 backdrop-blur-lg py-16 text-center">
+
+  <!-- logo -->
+  <img src="https://i.imgur.com/EHu8rAb.png"
+       class="w-50 mx-auto mb-6">
+
+<div class="space-y-3 mt-4 text-sm">
+
+  <!-- telefone -->
+  <p class="mt-2 text-sm">
+  <a href="tel:+5561985410102" class="hover:text-green-400 transition">
+    📞 (61) 3354-1594
+  </a>
+</p>
+
+  <!-- instagram -->
+  <p>
+    <a href="https://www.instagram.com/carvalhodiesel/"
+       target="_blank"
+       class="text-pink-400 hover:text-green-300 transition">
+       📸 Instagram
+    </a>
+  </p>
+
+  <!-- facebook -->
+  <p>
+    <a href="https://www.facebook.com/profile.php?id=61561523730897&sk=about"
+       target="_blank"
+       class="text-blue-400 hover:text-blue-300 transition">
+       👍 Facebook
+    </a>
+  </p>
+
+  <!-- email -->
+  <p>
+    <a href="mailto:carvalhodiesel.financeiroadm@gmail.com"
+       class="text-white-400 hover:text-green-300 transition">
+       ✉ carvalhodiesel.financeiroadm@gmail.com
+    </a>
+  </p>
+  <!-- mapa -->
+ <section id="mapa" class="mt-10">
+    <iframe
+      src="https://www.google.com/maps?q=Carvalho+Diesel+Taguatinga&output=embed"
+      width="100%" height="400" style="border:0;"
+      loading="lazy">
+    </iframe>
+
+    <a href="https://www.google.com/maps/dir//Carvalho+Diesel"
+       class="block bg-[#00a651] text-center py-4 font-bold">
+       TRAÇAR ROTA
+    </a>
+    </section>
+  </div>
+
+</footer>
+
+<!-- WHATSAPP PREMIUM -->
+<div class="fixed bottom-6 right-6 group">
+
+<a href="https://wa.me/5561985410102?text=Olá%20preciso%20de%20informações"
+target="_blank"
+class="relative bg-[#00a651] w-14 h-14 rounded-full flex items-center justify-center glow hover:scale-110 transition">
+
+<span class="absolute -top-1 -right-1 bg-green-400 w-4 h-4 rounded-full animate-ping"></span>
+<span class="absolute -top-1 -right-1 bg-green-500 w-4 h-4 rounded-full"></span>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="white" viewBox="0 0 24 24">
+<path d="M20.52 3.48A11.86 11.86 0 0012.05 0C5.4 0 .03 5.37.03 12c0 2.11.55 4.16 1.6 5.97L0 24l6.19-1.63A11.95 11.95 0 0012.05 24c6.65 0 12.02-5.37 12.02-12 0-3.21-1.25-6.23-3.55-8.52zM12.05 21.9c-1.8 0-3.56-.48-5.1-1.39l-.36-.21-3.67.97.98-3.58-.23-.37A9.9 9.9 0 012.15 12c0-5.46 4.44-9.9 9.9-9.9 2.65 0 5.14 1.03 7.02 2.9A9.86 9.86 0 0121.95 12c0 5.46-4.44 9.9-9.9 9.9z"/>
+</svg>
+
+</a>
+
+<div class="absolute right-16 bottom-2 bg-[#0a1b38] px-4 py-2 rounded-xl text-sm opacity-0 group-hover:opacity-100 transition whitespace-nowrap">
+Fale com especialista agora 👨‍🔧
+</div>
+
+</div>
+<button id="topBtn"
+  class="fixed bottom-6 left-6 bg-green-500 hover:bg-green-400 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center opacity-0 pointer-events-none transition">
+  
+  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-width="2" d="M5 15l7-7 7 7"/>
+</svg>
+</button>
+
+<script>
+const btn = document.getElementById("topBtn");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    btn.classList.remove("opacity-0","pointer-events-none");
+  } else {
+    btn.classList.add("opacity-0","pointer-events-none");
+  }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sobre - Carvalho Diesel</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+body{
+background:url("https://i.imgur.com/dwkIadI.png") center/cover fixed;
+}
+
+.glow{box-shadow:0 0 20px rgba(0,166,81,.6)}
+
+@keyframes fade{
+0%{opacity:0;transform:translateY(40px)}
+100%{opacity:1}
+}
+.fade{animation:fade 1s ease forwards}
+</style>
+</head>
+
+<body class="text-white font-sans">
+
+<!-- CONTEÚDO -->
+<section class="py-24 max-w-5xl mx-auto px-3 text-center fade">
+
+<!-- LOGO -->
+<img src="https://i.imgur.com/HokqUxE.png" class="mx-auto w-200 mb-10">
+
+<h1 class="text-3xl font-bold mb-6">SOBRE A CARVALHO DIESEL</h1>
+
+<!-- CONTADOR -->
+<div id="years" class="text-7xl font-black text-[#00a651] glow mb-8">0</div>
+<p class="text-gray-300 mb-10">anos de experiência no mercado diesel</p>
+
+<!-- TEXTO SOBRE -->
+<p class="text-lg text-gray-300 leading-relaxed">
+A Carvalho Diesel nasceu do propósito de servir quem move o Brasil pelas estradas. Há mais de 25 anos,
+construímos nossa história ao lado de motoristas, frotistas e proprietários de veículos pesados, entendendo
+de perto seus desafios, rotinas e necessidades.
+
+Somos uma empresa com essência familiar, que acredita no atendimento humano, na confiança e no respeito
+como pilares de cada relacionamento. Aqui, cada cliente é recebido com atenção, transparência e dedicação,
+porque sabemos que por trás de cada caminhão ou ônibus existe uma história, um trabalho e um sonho em movimento.
+
+Trabalhamos com peças e acessórios de qualidade, escolhidos com responsabilidade para garantir segurança,
+desempenho e durabilidade. Mais do que fornecer produtos, buscamos oferecer tranquilidade, suporte e soluções
+que mantenham seu veículo rodando com eficiência e confiança.
+
+Ao longo dos anos, crescemos sem perder nossa essência: estar presentes, ouvir nossos clientes e construir
+parcerias duradouras. A Carvalho Diesel é mais do que uma loja de peças — é uma parceira de estrada.
+</p>
+
+</section>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5561985410102?text=Olá%20preciso%20de%20informações" target="_blank"
+class="fixed bottom-6 right-6 bg-[#00a651] w-16 h-16 rounded-full flex items-center justify-center glow hover:scale-110 transition">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" viewBox="0 0 24 24">
+<path d="M20.52 3.48A11.86 11.86 0 0012.05 0C5.4 0 .03 5.37.03 12c0 2.11.55 4.16 1.6 5.97L0 24l6.19-1.63A11.95 11.95 0 0012.05 24c6.65 0 12.02-5.37 12.02-12 0-3.21-1.25-6.23-3.55-8.52z"/>
+</svg>
+
+</a>
+
+<!-- SCRIPT CONTADOR -->
+<script>
+let years=0;
+let target=25;
+let el=document.getElementById("years");
+
+let int=setInterval(()=>{
+years++;
+el.innerText=years+"+";
+if(years>=target) clearInterval(int);
+},80);
+</script>
+
+</body>
+<a href="index.html"
+class="fixed top-6 left-6 bg-[#00a651] px-4 py-2 rounded-full glow hover:scale-110 transition z-50">
+← Voltar
+</a>
+</html>
