@@ -57,6 +57,9 @@
 
 <!-- HERO -->
 <section class="max-w-4xl mx-auto px-6 text-center">
+  <h1 class="text-3xl font-bold mb-4">
+🔥 Oferta da Semana
+</h1>
 
   <div class="relative overflow-hidden">
 
@@ -85,6 +88,134 @@
 </button>>
 
 </section>
+
+<!-- ================= VITRINE DE OFERTAS ================= -->
+
+<section class="py-20 max-w-7xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-center mb-6">
+Ofertas Especiais em Peças Diesel
+</h2>
+
+<p class="text-gray-300 text-center max-w-3xl mx-auto mb-16">
+Confira nossas promoções em peças diesel para caminhões e linha pesada.
+Atendemos Brasília DF e todo o Distrito Federal com entrega rápida.
+</p>
+<!-- FILTRO -->
+<div class="flex justify-center gap-4 mb-12 flex-wrap">
+
+<button onclick="filtrar('todos')" class="bg-green-500 px-4 py-2 rounded-full font-semibold">
+Todos
+</button>
+
+<button onclick="filtrar('seguranca')" class="bg-[#0a1b38] border border-green-500/30 px-4 py-2 rounded-full">
+Segurança
+</button>
+
+<button onclick="filtrar('acessorios')" class="bg-[#0a1b38] border border-green-500/30 px-4 py-2 rounded-full">
+Acessórios
+</button>
+
+</div>
+<div class="grid md:grid-cols-3 gap-10">
+
+<!-- PRODUTO 1 -->
+<div class="produto seguranca relative bg-[#0a1b38] rounded-2xl overflow-hidden border border-green-500/30 hover:scale-105 transition">
+<div class="absolute top-4 left-4 bg-red-600 text-white text-xs px-3 py-1 rounded-full font-bold">
+🔥 Oferta Limitada
+</div>
+
+<img src="https://i.imgur.com/cglMQ7z.png" class="w-full h-64 object-contain p-4">
+
+<div class="p-6 text-center">
+
+<h3 class="text-lg font-bold text-green-400 mb-2">
+Faixa Refletiva 3M Grau Diamante
+</h3>
+
+<p class="text-sm text-gray-400 mb-4">
+Produto original 3M para para-choque de caminhões.
+Alta durabilidade e segurança.
+</p>
+
+<p class="text-2xl font-bold text-green-400 mb-2">
+R$ 80,00 à vista
+</p>
+<p class="text-gray-400 text-sm mb-6">
+R$ 90,00 a prazo
+<p class="text-sm text-red-400 font-semibold mt-2">
+⏳ Termina em: <span class="countdown"></span>
+</p>
+</p>
+
+<a href="https://wa.me/5561985410102?text=Olá%20quero%20a%20Faixa%20Refletiva%203M"
+class="block bg-green-500 py-3 rounded-xl font-semibold hover:bg-green-400 transition">
+Comprar pelo WhatsApp
+</a>
+
+</div>
+</div>
+
+<!-- PRODUTO 2 -->
+<div class="bg-[#0a1b38] rounded-2xl overflow-hidden border border-green-500/30 hover:scale-105 transition">
+
+<img src="https://i.imgur.com/am0CNUC.png" class="w-full h-64 object-contain p-4">
+
+<div class="p-6 text-center">
+
+<h3 class="text-lg font-bold text-green-400 mb-2">
+Faixa para Para-choque
+</h3>
+
+<p class="text-sm text-gray-400 mb-4">
+Ideal para caminhões e implementos rodoviários.
+Produto resistente e homologado.
+</p>
+
+<p class="text-2xl font-bold text-green-400 mb-6">
+Consulte preço
+</p>
+
+<a href="https://wa.me/5561985410102?text=Olá%20quero%20a%20Faixa%20para%20Para-choque"
+class="block bg-green-500 py-3 rounded-xl font-semibold hover:bg-green-400 transition">
+Solicitar Orçamento
+</a>
+
+</div>
+</div>
+
+<!-- PRODUTO 3 -->
+<div class="bg-[#0a1b38] rounded-2xl overflow-hidden border border-green-500/30 hover:scale-105 transition">
+
+<img src="https://i.imgur.com/Zzzq2H3.png" class="w-full h-64 object-contain p-4">
+
+<div class="p-6 text-center">
+
+<h3 class="text-lg font-bold text-green-400 mb-2">
+Cinta com Catraca
+</h3>
+
+<p class="text-sm text-gray-400 mb-4">
+Segurança e fixação para cargas em caminhões.
+Alta resistência.
+</p>
+
+<p class="text-2xl font-bold text-green-400 mb-6">
+Consulte preço
+</p>
+
+<a href="https://wa.me/5561985410102?text=Olá%20quero%20a%20Cinta%20com%20Catraca"
+class="block bg-green-500 py-3 rounded-xl font-semibold hover:bg-green-400 transition">
+Solicitar Orçamento
+</a>
+
+</div>
+</div>
+
+</div>
+
+</section>
+
 <script>
 const banners = [
   {img:"https://i.imgur.com/cglMQ7z.png", nome:"Promoção Faixa Refletiva"},
@@ -161,6 +292,45 @@ document.querySelectorAll(".ripple").forEach(btn=>{
     setTimeout(()=>circle.remove(),600);
   });
 });
+</script>
+
+<script>
+function filtrar(categoria){
+  const produtos = document.querySelectorAll('.produto');
+
+  produtos.forEach(p => {
+    if(categoria === 'todos'){
+      p.style.display = 'block';
+    } else {
+      p.style.display = p.classList.contains(categoria) ? 'block' : 'none';
+    }
+  });
+}
+</script>
+
+<script>
+const prazo = new Date();
+prazo.setHours(prazo.getHours() + 48);
+
+function atualizarContadores(){
+  const agora = new Date();
+  const diff = prazo - agora;
+
+  const horas = Math.floor(diff / (1000*60*60));
+  const minutos = Math.floor((diff / (1000*60)) % 60);
+  const segundos = Math.floor((diff / 1000) % 60);
+
+  document.querySelectorAll('.countdown').forEach(el=>{
+    if(diff > 0){
+      el.innerText = horas+"h "+minutos+"m "+segundos+"s";
+    } else {
+      el.innerText = "Encerrada";
+    }
+  });
+}
+
+setInterval(atualizarContadores,1000);
+atualizarContadores();
 </script>
 
 </body>
