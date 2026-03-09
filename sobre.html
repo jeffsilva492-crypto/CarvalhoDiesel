@@ -106,29 +106,85 @@ Por que escolher a Carvalho Diesel?
 Nossa Estrutura
 </h2>
 
-<div class="relative overflow-hidden rounded-2xl mb-20">
-<div class="flex animate-slide">
+<div class="relative overflow-hidden rounded-2xl mb-20 max-w-5xl mx-auto">
 
-<img src="https://i.imgur.com/lkNVxwd.png" class="w-full max-w-md mx-auto rounded-xl">
-<img src="https://i.imgur.com/eZ73bOR.png" class="w-full max-w-md mx-auto rounded-xl">
-<img src="https://i.imgur.com/EzVAiuC.png" class="w-full max-w-md mx-auto rounded-xl">
-<img src="COLOQUE_AQUI_IMAGEM1.jpg" class="w-full flex-shrink-0 object-cover">
+<div id="carousel" class="flex transition-transform duration-700 ease-in-out">
+
+<img src="https://i.imgur.com/uEpUjkP.jpeg"
+alt="Interior da loja Carvalho Diesel em Brasília com prateleiras de peças para caminhões"
+class="w-full h-72 flex-shrink-0 object-cover rounded-2xl">
+
+<img src="https://i.imgur.com/iZVmuYu.jpeg"
+alt="Estrutura da autopeças Carvalho Diesel especializada em linha pesada em Brasília DF"
+class="w-full h-72 flex-shrink-0 object-cover rounded-2xl">
+
+<img src="https://i.imgur.com/Pl4pYv7.jpeg"
+alt="Estoque organizado de peças diesel para caminhões na Carvalho Diesel"
+class="w-full h-72 flex-shrink-0 object-cover rounded-2xl">
 
 </div>
+<p class="text-gray-300 text-center max-w-3xl mx-auto mt-6">
+Nossa estrutura foi preparada para oferecer organização, variedade e agilidade no atendimento.
+A <strong>Carvalho Diesel em Brasília DF</strong> conta com estoque amplo de peças diesel para caminhões e linha pesada,
+permitindo atender motoristas, frotistas e empresas com rapidez e confiança.
+</p>
 </div>
 
-<style>
-@keyframes slide {
-0% { transform: translateX(0); }
-33% { transform: translateX(-100%); }
-66% { transform: translateX(-200%); }
-100% { transform: translateX(0); }
+<script>
+const carousel = document.getElementById("carousel");
+const slides = carousel.children;
+let index = 0;
+let auto;
+
+// mover slide
+function moveSlide(){
+index++;
+if(index >= slides.length){
+index = 0;
+}
+carousel.style.transform = `translateX(-${index * 100}%)`;
 }
 
-.animate-slide {
-animation: slide 18s infinite;
+// autoplay
+function startAuto(){
+auto = setInterval(moveSlide, 4000);
 }
-</style>
+
+// parar autoplay
+function stopAuto(){
+clearInterval(auto);
+}
+
+// iniciar
+startAuto();
+
+// pausa no hover
+carousel.addEventListener("mouseenter", stopAuto);
+carousel.addEventListener("mouseleave", startAuto);
+
+// swipe mobile
+let startX = 0;
+
+carousel.addEventListener("touchstart", e=>{
+startX = e.touches[0].clientX;
+});
+
+carousel.addEventListener("touchend", e=>{
+let endX = e.changedTouches[0].clientX;
+
+if(startX - endX > 50){
+moveSlide();
+}
+
+if(endX - startX > 50){
+index--;
+if(index < 0){
+index = slides.length - 1;
+}
+carousel.style.transform = `translateX(-${index * 100}%)`;
+}
+});
+</script>
 
 <!-- ================= ATENDEMOS ================= -->
 
@@ -197,5 +253,4 @@ if(years>=target) clearInterval(int);
 class="fixed top-6 left-6 bg-[#00a651] px-4 py-2 rounded-full glow hover:scale-110 transition z-50">
 ← Voltar
 </a>
-
 </html>
