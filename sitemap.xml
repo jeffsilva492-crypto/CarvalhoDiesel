@@ -3,46 +3,57 @@
 
 <url>
 <loc>https://carvalhodiesel.com.br/</loc>
+<priority>1.0</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/sobre.html</loc>
+<priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/motores-caminhao-brasilia.html</loc>
+<priority>0.9</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/freios-caminhao-brasilia.html</loc>
+<priority>0.9</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/suspensao-caminhao-brasilia.html</loc>
+<priority>0.9</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/acessorios-caminhao-brasilia.html</loc>
+<priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/cambio-caminhao-brasilia.html</loc>
+<priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/embreagem-caminhao-brasilia.html</loc>
+<priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/diferencial-caminhao-brasilia.html</loc>
+<priority>0.8</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/filtros-diesel-brasilia.html</loc>
+<priority>0.9</priority>
 </url>
 
 <url>
 <loc>https://carvalhodiesel.com.br/promocoes.html</loc>
+<priority>0.7</priority>
 </url>
 
 </urlset>
