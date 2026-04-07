@@ -1,5 +1,0 @@
-User-agent: *
-Allow: /
-
-# Sitemap principal
-Sitemap: https://carvalhodiesel.com.br/sitemap.xml
