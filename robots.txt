@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seudominio/sitemap.xml
+Sitemap: https://carvalhodiesel.com.br/sitemap.xml
