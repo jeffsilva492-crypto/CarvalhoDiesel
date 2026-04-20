@@ -160,8 +160,17 @@ class="bg-green-500 hover:bg-green-600 px-10 py-4 rounded-lg font-semibold">
 Falar no WhatsApp
 
 </a>
-
 </section>
+<footer style="text-align:center; padding:15px; font-size:14px; color:#ccc; background:#0b1f33;">
+  © <span id="ano"></span> Carvalho Diesel. Todos os direitos reservados. |
+  Desenvolvido por 
+  <a href="https://zefostudio.com.br" target="_blank" style="color:#00bfff; text-decoration:none;">
+    Zefostudio
+  </a>
+</footer>
 
+<script>
+  document.getElementById("ano").innerHTML = new Date().getFullYear();
+</script>
 </body>
 </html>
