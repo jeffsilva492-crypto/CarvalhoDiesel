@@ -289,7 +289,6 @@ transition: 0.3s;
 
 <body class="text-white font-sans relative">
  <!-- DECORAÇÃO ARRAIÁ -->
-<div class="arraia-top"></div>
 
 <!-- FAÍSCAS -->
 <div class="embers"></div>
@@ -338,7 +337,12 @@ Mais de 25 anos fornecendo qualidade, procedência e confiança para sua frota.
 </div>
 
 <div class="md:w-1/2">
-<img src="https://i.imgur.com/2AHKKTW.png" class="rounded-xl glow">
+
+<img
+id="heroSlider"
+src="https://i.imgur.com/2AHKKTW.png"
+class="rounded-xl glow transition-all duration-500 w-full">
+
 </div>
 </section>
 
@@ -790,5 +794,39 @@ whatsapp.classList.toggle("hidden");
 <script>
   document.getElementById("ano").innerHTML = new Date().getFullYear();
 </script>
+ <script>
+
+const imagens = [
+
+"https://i.imgur.com/2AHKKTW.png", // fachada
+
+"https://i.imgur.com/HAuY2XT.jpeg", // segunda foto
+
+"https://i.imgur.com/buZeBvU.jpeg"  // terceira foto
+
+];
+
+let atual = 0;
+
+setInterval(() => {
+
+const img = document.getElementById("heroSlider");
+
+img.style.opacity = 0;
+
+setTimeout(() => {
+
+atual = (atual + 1) % imagens.length;
+
+img.src = imagens[atual];
+
+img.style.opacity = 1;
+
+}, 400);
+
+}, 5000);
+
+</script>
 </body>
+ 
 </html>
