@@ -77,6 +77,72 @@
 body{
 background:url("https://i.imgur.com/dwkIadI.png") center/cover fixed;
 }
+ /* ===========================
+   ARRAIÁ CARVALHO DIESEL
+=========================== */
+
+.arraia-top{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:180px;
+
+    background-image:url("https://i.imgur.com/EViKyeO.png");
+
+    background-repeat:no-repeat;
+    background-position:center top;
+    background-size:cover;
+
+    pointer-events:none;
+    z-index:1;
+}
+
+/* FAÍSCAS */
+
+.embers{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    z-index:1;
+}
+
+.embers::before,
+.embers::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+
+    background-image:
+    radial-gradient(circle,#ffb347 1px,transparent 2px),
+    radial-gradient(circle,#ff7b00 2px,transparent 3px),
+    radial-gradient(circle,#ffd27f 1px,transparent 2px);
+
+    background-size:
+    250px 250px,
+    300px 300px,
+    200px 200px;
+
+    animation: embersMove 25s linear infinite;
+
+    opacity:.25;
+}
+
+.embers::after{
+    animation-duration:35s;
+    opacity:.15;
+}
+
+@keyframes embersMove{
+    from{
+        transform:translateY(100px);
+    }
+
+    to{
+        transform:translateY(-500px);
+    }
+}
 .glow{box-shadow:0 0 20px rgba(0,166,81,.6)}
 @keyframes fade{0%{opacity:0;transform:translateY(40px)}100%{opacity:1}}
 .fade{animation:fade 1s ease forwards}
@@ -165,10 +231,15 @@ transition: 0.3s;
 </style>
 </head>
 
-<body class="text-white font-sans">
+<body class="text-white font-sans relative">
+ <!-- DECORAÇÃO ARRAIÁ -->
+<div class="arraia-top"></div>
+
+<!-- FAÍSCAS -->
+<div class="embers"></div>
 
 <!-- HEADER -->
-<header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative">
+<header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-10">
 
 <img src="https://i.imgur.com/EHu8rAb.png" class="w-40 md:w-56">
 
@@ -216,6 +287,55 @@ Mais de 25 anos fornecendo qualidade, procedência e confiança para sua frota.
 </section>
 
 <section class="py-24 text-white">
+ <section class="max-w-5xl mx-auto px-6 mb-16">
+
+<div class="bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 p-1 rounded-3xl shadow-2xl">
+
+<div class="bg-[#0a1b38] rounded-3xl p-8 text-center">
+
+<div class="text-5xl mb-4">
+🌽
+</div>
+
+<h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
+ARRAIÁ CARVALHO DIESEL
+</h2>
+
+<p class="text-orange-300 text-2xl font-bold mb-6">
+21 DE JUNHO • A PARTIR DAS 09H
+</p>
+
+<div class="grid md:grid-cols-4 gap-4 mb-8 text-lg">
+
+<div>🎁 Sorteios</div>
+
+<div>🔥 Promoções</div>
+
+<div>☕ Café da manhã</div>
+
+<div>🚛 Linha Pesada</div>
+
+</div>
+
+<p class="text-gray-300 mb-8">
+Venha participar do nosso Arraiá, aproveitar ofertas especiais e tomar um café conosco.
+</p>
+
+<a href="https://wa.me/5561985410102?text=Olá,%20quero%20participar%20do%20Arraiá%20Carvalho%20Diesel"
+
+target="_blank"
+
+class="inline-block bg-[#00a651] px-8 py-4 rounded-full font-bold glow hover:scale-110 transition">
+
+CONFIRMAR PRESENÇA NO WHATSAPP
+
+</a>
+
+</div>
+
+</div>
+
+</section>
 <h2 class="text-4xl font-bold text-center mb-16">NOSSAS CATEGORIAS</h2>
 
 <div class="grid md:grid-cols-4 gap-10 max-w-7xl mx-auto px-6 text-center">
