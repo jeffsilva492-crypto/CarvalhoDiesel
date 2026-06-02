@@ -283,7 +283,55 @@ transition: 0.3s;
         drop-shadow(0 0 25px #ffb347);
     }
 }
+/* ==========================
+   BANDEIRINHAS DA LOGO
+========================== */
 
+.logo-junina{
+    position:relative;
+    display:inline-block;
+}
+
+.mini-flags{
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    bottom:-18px;
+
+    display:flex;
+    gap:4px;
+}
+
+.mini-flags span{
+    width:14px;
+    height:18px;
+
+    clip-path:polygon(
+        50% 100%,
+        0 0,
+        100% 0
+    );
+
+    animation:flagSwing 3s ease-in-out infinite;
+}
+
+.mini-flags span:nth-child(1){background:#ff9800;}
+.mini-flags span:nth-child(2){background:#2196f3;}
+.mini-flags span:nth-child(3){background:#4caf50;}
+.mini-flags span:nth-child(4){background:#f44336;}
+.mini-flags span:nth-child(5){background:#ffc107;}
+.mini-flags span:nth-child(6){background:#00bcd4;}
+.mini-flags span:nth-child(7){background:#8bc34a;}
+
+@keyframes flagSwing{
+    0%,100%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(2px);
+    }
+}
 </style>
 </head>
 
@@ -296,7 +344,21 @@ transition: 0.3s;
 <!-- HEADER -->
 <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-10">
 
+<div class="logo-junina">
+
 <img src="https://i.imgur.com/EHu8rAb.png" class="w-40 md:w-56">
+
+<div class="mini-flags">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+
+</div>
 
 <!-- botão hamburguer -->
 <button id="menuBtn" class="md:hidden text-3xl relative z-50">
