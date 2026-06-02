@@ -184,21 +184,36 @@ transition: 0.3s;
 
     background-image:
         radial-gradient(circle,#ff6b00 2px,transparent 4px),
-        radial-gradient(circle,#ff9500 3px,transparent 5px),
-        radial-gradient(circle,#ffd36b 2px,transparent 4px),
-        radial-gradient(circle,#ff4d00 1px,transparent 3px);
+        radial-gradient(circle,#ff9500 2px,transparent 5px);
 
     background-size:
-        180px 180px,
-        250px 250px,
         220px 220px,
-        150px 150px;
+        280px 280px;
 
-    opacity:.85;
+    opacity:.5;
 
-    animation:
-        embersMove 20s linear infinite,
-        embersGlow 4s ease-in-out infinite;
+    mask-image: linear-gradient(
+        90deg,
+        black 0%,
+        black 15%,
+        transparent 30%,
+        transparent 70%,
+        black 85%,
+        black 100%
+    );
+
+    -webkit-mask-image: linear-gradient(
+        90deg,
+        black 0%,
+        black 15%,
+        transparent 30%,
+        transparent 70%,
+        black 85%,
+        black 100%
+    );
+
+    animation: embersMove 25s linear infinite;
+}
 }
 
 .embers::after{
@@ -207,20 +222,34 @@ transition: 0.3s;
     inset:0;
 
     background-image:
-        radial-gradient(circle,#ff7b00 3px,transparent 5px),
         radial-gradient(circle,#ffb347 2px,transparent 4px);
 
-    background-size:
-        300px 300px,
-        180px 180px;
+    background-size:320px 320px;
 
-    opacity:.55;
+    opacity:.25;
 
-    animation:
-        embersMove 30s linear infinite reverse,
-        embersGlow 6s ease-in-out infinite;
+    mask-image: linear-gradient(
+        90deg,
+        black 0%,
+        black 10%,
+        transparent 25%,
+        transparent 75%,
+        black 90%,
+        black 100%
+    );
+
+    -webkit-mask-image: linear-gradient(
+        90deg,
+        black 0%,
+        black 10%,
+        transparent 25%,
+        transparent 75%,
+        black 90%,
+        black 100%
+    );
+
+    animation: embersMove 35s linear infinite reverse;
 }
-
 @keyframes embersMove{
     0%{
         transform:translateY(200px);
