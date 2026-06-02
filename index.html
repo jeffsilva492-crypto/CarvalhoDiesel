@@ -101,6 +101,15 @@ background:url("https://i.imgur.com/dwkIadI.png") center/cover fixed;
   background-size: 200% 200%;
   animation: gradient 6s ease infinite;
 }
+ .event-banner{
+    transition:all .3s ease;
+    cursor:pointer;
+}
+
+.event-banner:hover{
+    transform:scale(1.02);
+    filter:brightness(1.05);
+}
 </style>
 <style>
 .logo {
@@ -214,7 +223,6 @@ transition: 0.3s;
 
     animation: embersMove 25s linear infinite;
 }
-}
 
 .embers::after{
     content:"";
@@ -287,7 +295,7 @@ transition: 0.3s;
 <div class="embers"></div>
 
 <!-- HEADER -->
-<header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative">
+<header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-10">
 
 <img src="https://i.imgur.com/EHu8rAb.png" class="w-40 md:w-56">
 
@@ -335,53 +343,18 @@ Mais de 25 anos fornecendo qualidade, procedência e confiança para sua frota.
 </section>
 
 <section class="py-24 text-white">
- <section class="max-w-5xl mx-auto px-6 mb-16">
+<section class="max-w-6xl mx-auto px-6 mb-16">
 
-<div class="bg-gradient-to-r from-orange-500 via-yellow-400 to-orange-500 p-1 rounded-3xl shadow-2xl">
+<a
+href="https://wa.me/5561985410102?text=Olá,%20quero%20participar%20do%20Arraiá%20Carvalho%20Diesel"
+target="_blank">
 
-<div class="bg-[#0a1b38] rounded-3xl p-8 text-center">
-
-<div class="text-5xl mb-4">
-🌽
-</div>
-
-<h2 class="text-4xl md:text-5xl font-black mb-4 text-white">
-ARRAIÁ CARVALHO DIESEL
-</h2>
-
-<p class="text-orange-300 text-2xl font-bold mb-6">
-25 DE JULHO • A PARTIR DAS 09H
-</p>
-
-<div class="grid md:grid-cols-4 gap-4 mb-8 text-lg">
-
-<div>🎁 Sorteios</div>
-
-<div>🔥 Promoções</div>
-
-<div>☕ Café da manhã</div>
-
-<div>🚛 Linha Pesada</div>
-
-</div>
-
-<p class="text-gray-300 mb-8">
-Venha participar do nosso Arraiá, aproveitar ofertas especiais e tomar um café conosco.
-</p>
-
-<a href="https://wa.me/5561985410102?text=Olá,%20quero%20participar%20do%20Arraiá%20Carvalho%20Diesel"
-
-target="_blank"
-
-class="inline-block bg-[#00a651] px-8 py-4 rounded-full font-bold glow hover:scale-110 transition">
-
-CONFIRMAR PRESENÇA NO WHATSAPP
+<img
+src="https://i.imgur.com/sZag4Tm.png"
+alt="Arraiá Carvalho Diesel"
+class="event-banner w-full rounded-3xl shadow-2xl">
 
 </a>
-
-</div>
-
-</div>
 
 </section>
 <h2 class="text-4xl font-bold text-center mb-16">NOSSAS CATEGORIAS</h2>
