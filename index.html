@@ -101,15 +101,6 @@ background:url("https://i.imgur.com/dwkIadI.png") center/cover fixed;
   background-size: 200% 200%;
   animation: gradient 6s ease infinite;
 }
- .event-banner{
-    transition:all .3s ease;
-    cursor:pointer;
-}
-
-.event-banner:hover{
-    transform:scale(1.02);
-    filter:brightness(1.05);
-}
 </style>
 <style>
 .logo {
@@ -172,193 +163,14 @@ transform: scale(1.05);
 transition: 0.3s;
 }
 </style>
- <style>
-
-/* ==========================
-   FAÍSCAS ARRAIÁ
-========================== */
-
-.embers{
-    position:fixed;
-    inset:0;
-    pointer-events:none;
-    z-index:2;
-    overflow:hidden;
-}
-
-.embers::before{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background-image:
-        radial-gradient(circle,#ff6b00 2px,transparent 4px),
-        radial-gradient(circle,#ff9500 2px,transparent 5px);
-
-    background-size:
-        220px 220px,
-        280px 280px;
-
-    opacity:.5;
-
-    mask-image: linear-gradient(
-        90deg,
-        black 0%,
-        black 15%,
-        transparent 30%,
-        transparent 70%,
-        black 85%,
-        black 100%
-    );
-
-    -webkit-mask-image: linear-gradient(
-        90deg,
-        black 0%,
-        black 15%,
-        transparent 30%,
-        transparent 70%,
-        black 85%,
-        black 100%
-    );
-
-    animation: embersMove 25s linear infinite;
-}
-
-.embers::after{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background-image:
-        radial-gradient(circle,#ffb347 2px,transparent 4px);
-
-    background-size:320px 320px;
-
-    opacity:.25;
-
-    mask-image: linear-gradient(
-        90deg,
-        black 0%,
-        black 10%,
-        transparent 25%,
-        transparent 75%,
-        black 90%,
-        black 100%
-    );
-
-    -webkit-mask-image: linear-gradient(
-        90deg,
-        black 0%,
-        black 10%,
-        transparent 25%,
-        transparent 75%,
-        black 90%,
-        black 100%
-    );
-
-    animation: embersMove 35s linear infinite reverse;
-}
-@keyframes embersMove{
-    0%{
-        transform:translateY(200px);
-    }
-
-    100%{
-        transform:translateY(-600px);
-    }
-}
-
-@keyframes embersGlow{
-
-    0%,100%{
-        filter:
-        drop-shadow(0 0 2px #ff6b00)
-        drop-shadow(0 0 5px #ff9500);
-    }
-
-    50%{
-        filter:
-        drop-shadow(0 0 8px #ff6b00)
-        drop-shadow(0 0 15px #ff9500)
-        drop-shadow(0 0 25px #ffb347);
-    }
-}
-/* ==========================
-   BANDEIRINHAS DA LOGO
-========================== */
-
-.logo-junina{
-    position:relative;
-    display:inline-block;
-}
-
-.mini-flags{
-    position:absolute;
-    left:50%;
-    transform:translateX(-50%);
-    bottom:-18px;
-
-    display:flex;
-    gap:4px;
-}
-
-.mini-flags span{
-    width:14px;
-    height:18px;
-
-    clip-path:polygon(
-        50% 100%,
-        0 0,
-        100% 0
-    );
-
-    animation:flagSwing 3s ease-in-out infinite;
-}
-
-.mini-flags span:nth-child(1){background:#ff9800;}
-.mini-flags span:nth-child(2){background:#2196f3;}
-.mini-flags span:nth-child(3){background:#4caf50;}
-.mini-flags span:nth-child(4){background:#f44336;}
-.mini-flags span:nth-child(5){background:#ffc107;}
-.mini-flags span:nth-child(6){background:#00bcd4;}
-.mini-flags span:nth-child(7){background:#8bc34a;}
-
-@keyframes flagSwing{
-    0%,100%{
-        transform:translateY(0px);
-    }
-
-    50%{
-        transform:translateY(2px);
-    }
-}
-</style>
 </head>
 
 <body class="text-white font-sans relative">
- <!-- DECORAÇÃO ARRAIÁ -->
-
-<!-- FAÍSCAS -->
-<div class="embers"></div>
 
 <!-- HEADER -->
 <header class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative z-10">
 
-<div class="logo-junina">
-
 <img src="https://i.imgur.com/EHu8rAb.png" class="w-40 md:w-56">
-
-<div class="mini-flags">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-</div>
-
-</div>
 
 <!-- botão hamburguer -->
 <button id="menuBtn" class="md:hidden text-3xl relative z-50">
@@ -409,20 +221,7 @@ class="rounded-xl glow transition-all duration-500 w-full">
 </section>
 
 <section class="py-24 text-white">
-<section class="max-w-6xl mx-auto px-6 mb-16">
 
-<a
-href="https://wa.me/5561985410102?text=Olá,%20quero%20participar%20do%20Arraiá%20Carvalho%20Diesel"
-target="_blank">
-
-<img
-src="https://i.imgur.com/qQvCv11.png"
-alt="Arraiá Carvalho Diesel"
-class="event-banner w-full rounded-3xl shadow-2xl">
-
-</a>
-
-</section>
 <h2 class="text-4xl font-bold text-center mb-16">NOSSAS CATEGORIAS</h2>
 
 <div class="grid md:grid-cols-4 gap-10 max-w-7xl mx-auto px-6 text-center">
