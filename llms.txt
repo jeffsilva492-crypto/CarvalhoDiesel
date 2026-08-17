@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Site: https://carvalhodiesel.com.br
+Description: Autopeças diesel em Brasília DF especializada em peças para caminhões e linha pesada.
+
+Contact: https://wa.me/5561985410102
